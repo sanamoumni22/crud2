@@ -1,0 +1,25 @@
+<html>
+<head>
+</head>
+<body>
+<table border="1">
+<thead>
+<th>Title </th>  <th> Price</th> <th> Quantity</th> <th>Desripition</th>  <th>action</th>
+</thead>
+<tbody>
+
+
+
+{% for item in data %}
+<tr>
+<td>{{item.title}} </td> <td>{{item.price}}</td> 
+ <td> {{item.quantity}}</td> <td>{{item.description}} </td>
+ <td> <a href="/produits/update/{{item._id}}">Update</a> </td>
+   <td> <a href="/produits/delete/{{item._id}}">Delete </a> </td>
+   <td> <a href="/produits/detail/{{item._id}}">Detail </a> </td>
+
+</tr>
+{% endfor %}
+</tbody>
+</table>
+</html>

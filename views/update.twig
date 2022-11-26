@@ -1,0 +1,13 @@
+<form action='/produits/updateproduit' method='post'>
+<label>title</label>
+<input type="text" name="title" value="{{d[0].title}}">
+<label>price</label>
+<input type="text" name="price" value="{{d[0].price}}">
+<label>quantity</label>
+<input type="text" name="quantity" value="{{d[0].quantity}}">
+<label>descriptionn</label>
+<input type="text" name="description" value="{{d[0].description}}">
+<input type="hidden" name="id" value="{{d[0]._id}}">
+
+<input type="submit" value ="save produit">
+</form>
